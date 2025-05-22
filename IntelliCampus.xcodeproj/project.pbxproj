@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5449AD402DDEEC2800B2AA9C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449AD3F2DDEEC2800B2AA9C /* Route.swift */; };
+		5449AD412DDEEC2800B2AA9C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449AD3F2DDEEC2800B2AA9C /* Route.swift */; };
+		5449AD422DDEEC2800B2AA9C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449AD3F2DDEEC2800B2AA9C /* Route.swift */; };
 		544A070F2DDD5A940052AD62 /* IntelliCampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A070D2DDD5A940052AD62 /* IntelliCampusApp.swift */; };
 		544A07102DDD5A940052AD62 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A070C2DDD5A940052AD62 /* Coordinator.swift */; };
 		544A07112DDD5A940052AD62 /* IntelliCampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A070D2DDD5A940052AD62 /* IntelliCampusApp.swift */; };
@@ -16,30 +19,18 @@
 		544A07242DDD5B720052AD62 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07232DDD5B720052AD62 /* AppCoordinator.swift */; };
 		544A07252DDD5B720052AD62 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07232DDD5B720052AD62 /* AppCoordinator.swift */; };
 		544A07262DDD5B720052AD62 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07232DDD5B720052AD62 /* AppCoordinator.swift */; };
-		544A07282DDD5C480052AD62 /* HabitListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07272DDD5C480052AD62 /* HabitListCoordinator.swift */; };
-		544A07292DDD5C480052AD62 /* HabitListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07272DDD5C480052AD62 /* HabitListCoordinator.swift */; };
-		544A072A2DDD5C480052AD62 /* HabitListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07272DDD5C480052AD62 /* HabitListCoordinator.swift */; };
 		544A072C2DDD5C600052AD62 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A072B2DDD5C600052AD62 /* HabitListViewModel.swift */; };
 		544A072D2DDD5C600052AD62 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A072B2DDD5C600052AD62 /* HabitListViewModel.swift */; };
 		544A072E2DDD5C600052AD62 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A072B2DDD5C600052AD62 /* HabitListViewModel.swift */; };
 		544A07302DDD5C730052AD62 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A072F2DDD5C730052AD62 /* HabitListView.swift */; };
 		544A07312DDD5C730052AD62 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A072F2DDD5C730052AD62 /* HabitListView.swift */; };
 		544A07322DDD5C730052AD62 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A072F2DDD5C730052AD62 /* HabitListView.swift */; };
-		544A07342DDD5ECE0052AD62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07332DDD5ECE0052AD62 /* AppDelegate.swift */; };
-		544A07352DDD5ECE0052AD62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07332DDD5ECE0052AD62 /* AppDelegate.swift */; };
-		544A07362DDD5ECE0052AD62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07332DDD5ECE0052AD62 /* AppDelegate.swift */; };
-		544A074D2DDD60E20052AD62 /* TutorialsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A074C2DDD60E20052AD62 /* TutorialsCoordinator.swift */; };
-		544A074E2DDD60E20052AD62 /* TutorialsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A074C2DDD60E20052AD62 /* TutorialsCoordinator.swift */; };
-		544A074F2DDD60E20052AD62 /* TutorialsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A074C2DDD60E20052AD62 /* TutorialsCoordinator.swift */; };
 		544A07512DDD61070052AD62 /* TutorialCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07502DDD61070052AD62 /* TutorialCatalogViewModel.swift */; };
 		544A07522DDD61070052AD62 /* TutorialCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07502DDD61070052AD62 /* TutorialCatalogViewModel.swift */; };
 		544A07532DDD61070052AD62 /* TutorialCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07502DDD61070052AD62 /* TutorialCatalogViewModel.swift */; };
 		544A07552DDD61290052AD62 /* TutorialCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07542DDD61290052AD62 /* TutorialCatalogView.swift */; };
 		544A07562DDD61290052AD62 /* TutorialCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07542DDD61290052AD62 /* TutorialCatalogView.swift */; };
 		544A07572DDD61290052AD62 /* TutorialCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07542DDD61290052AD62 /* TutorialCatalogView.swift */; };
-		544A07592DDD615C0052AD62 /* TutorialDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07582DDD615C0052AD62 /* TutorialDetailCoordinator.swift */; };
-		544A075A2DDD615C0052AD62 /* TutorialDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07582DDD615C0052AD62 /* TutorialDetailCoordinator.swift */; };
-		544A075B2DDD615C0052AD62 /* TutorialDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A07582DDD615C0052AD62 /* TutorialDetailCoordinator.swift */; };
 		544A075D2DDD61990052AD62 /* TutorialDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A075C2DDD61990052AD62 /* TutorialDetailViewModel.swift */; };
 		544A075E2DDD61990052AD62 /* TutorialDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A075C2DDD61990052AD62 /* TutorialDetailViewModel.swift */; };
 		544A075F2DDD61990052AD62 /* TutorialDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A075C2DDD61990052AD62 /* TutorialDetailViewModel.swift */; };
@@ -78,20 +69,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5449AD3F2DDEEC2800B2AA9C /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		544A06E22DDD5A360052AD62 /* IntelliCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544A06EF2DDD5A380052AD62 /* IntelliCampusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliCampusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		544A06F92DDD5A380052AD62 /* IntelliCampusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliCampusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		544A070C2DDD5A940052AD62 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		544A070D2DDD5A940052AD62 /* IntelliCampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliCampusApp.swift; sourceTree = "<group>"; };
 		544A07232DDD5B720052AD62 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		544A07272DDD5C480052AD62 /* HabitListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCoordinator.swift; sourceTree = "<group>"; };
 		544A072B2DDD5C600052AD62 /* HabitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewModel.swift; sourceTree = "<group>"; };
 		544A072F2DDD5C730052AD62 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
-		544A07332DDD5ECE0052AD62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		544A074C2DDD60E20052AD62 /* TutorialsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsCoordinator.swift; sourceTree = "<group>"; };
 		544A07502DDD61070052AD62 /* TutorialCatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCatalogViewModel.swift; sourceTree = "<group>"; };
 		544A07542DDD61290052AD62 /* TutorialCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCatalogView.swift; sourceTree = "<group>"; };
-		544A07582DDD615C0052AD62 /* TutorialDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetailCoordinator.swift; sourceTree = "<group>"; };
 		544A075C2DDD61990052AD62 /* TutorialDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetailViewModel.swift; sourceTree = "<group>"; };
 		544A07602DDD61D10052AD62 /* TutorialDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetailView.swift; sourceTree = "<group>"; };
 		544A07642DDD62F20052AD62 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
@@ -176,9 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				544A070C2DDD5A940052AD62 /* Coordinator.swift */,
-				544A07332DDD5ECE0052AD62 /* AppDelegate.swift */,
 				544A07232DDD5B720052AD62 /* AppCoordinator.swift */,
 				544A070D2DDD5A940052AD62 /* IntelliCampusApp.swift */,
+				5449AD3F2DDEEC2800B2AA9C /* Route.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -228,7 +216,6 @@
 		544A071A2DDD5AAF0052AD62 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
-				544A07272DDD5C480052AD62 /* HabitListCoordinator.swift */,
 				544A072B2DDD5C600052AD62 /* HabitListViewModel.swift */,
 				544A072F2DDD5C730052AD62 /* HabitListView.swift */,
 			);
@@ -256,29 +243,11 @@
 			path = SocialFeed;
 			sourceTree = "<group>";
 		};
-		544A071E2DDD5AAF0052AD62 /* Catalog */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Catalog;
-			sourceTree = "<group>";
-		};
-		544A071F2DDD5AAF0052AD62 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
 		544A07202DDD5AAF0052AD62 /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
-				544A071E2DDD5AAF0052AD62 /* Catalog */,
-				544A071F2DDD5AAF0052AD62 /* Detail */,
-				544A074C2DDD60E20052AD62 /* TutorialsCoordinator.swift */,
 				544A07502DDD61070052AD62 /* TutorialCatalogViewModel.swift */,
 				544A07542DDD61290052AD62 /* TutorialCatalogView.swift */,
-				544A07582DDD615C0052AD62 /* TutorialDetailCoordinator.swift */,
 				544A075C2DDD61990052AD62 /* TutorialDetailViewModel.swift */,
 				544A07602DDD61D10052AD62 /* TutorialDetailView.swift */,
 			);
@@ -453,7 +422,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				544A07362DDD5ECE0052AD62 /* AppDelegate.swift in Sources */,
 				544A070F2DDD5A940052AD62 /* IntelliCampusApp.swift in Sources */,
 				544A07512DDD61070052AD62 /* TutorialCatalogViewModel.swift in Sources */,
 				544A076D2DDD63470052AD62 /* HabitService.swift in Sources */,
@@ -461,13 +429,11 @@
 				544A07262DDD5B720052AD62 /* AppCoordinator.swift in Sources */,
 				544A076A2DDD631B0052AD62 /* Tutorial.swift in Sources */,
 				544A072C2DDD5C600052AD62 /* HabitListViewModel.swift in Sources */,
-				544A074F2DDD60E20052AD62 /* TutorialsCoordinator.swift in Sources */,
 				544A07102DDD5A940052AD62 /* Coordinator.swift in Sources */,
 				544A075E2DDD61990052AD62 /* TutorialDetailViewModel.swift in Sources */,
-				544A07282DDD5C480052AD62 /* HabitListCoordinator.swift in Sources */,
+				5449AD422DDEEC2800B2AA9C /* Route.swift in Sources */,
 				544A07572DDD61290052AD62 /* TutorialCatalogView.swift in Sources */,
 				544A07722DDD63780052AD62 /* TutorialService.swift in Sources */,
-				544A075A2DDD615C0052AD62 /* TutorialDetailCoordinator.swift in Sources */,
 				544A07622DDD61D10052AD62 /* TutorialDetailView.swift in Sources */,
 				544A07312DDD5C730052AD62 /* HabitListView.swift in Sources */,
 			);
@@ -477,7 +443,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				544A07352DDD5ECE0052AD62 /* AppDelegate.swift in Sources */,
 				544A07252DDD5B720052AD62 /* AppCoordinator.swift in Sources */,
 				544A07112DDD5A940052AD62 /* IntelliCampusApp.swift in Sources */,
 				544A07532DDD61070052AD62 /* TutorialCatalogViewModel.swift in Sources */,
@@ -486,12 +451,10 @@
 				544A07122DDD5A940052AD62 /* Coordinator.swift in Sources */,
 				544A07692DDD631B0052AD62 /* Tutorial.swift in Sources */,
 				544A072E2DDD5C600052AD62 /* HabitListViewModel.swift in Sources */,
-				544A074D2DDD60E20052AD62 /* TutorialsCoordinator.swift in Sources */,
 				544A075F2DDD61990052AD62 /* TutorialDetailViewModel.swift in Sources */,
-				544A07292DDD5C480052AD62 /* HabitListCoordinator.swift in Sources */,
+				5449AD402DDEEC2800B2AA9C /* Route.swift in Sources */,
 				544A07552DDD61290052AD62 /* TutorialCatalogView.swift in Sources */,
 				544A07732DDD63780052AD62 /* TutorialService.swift in Sources */,
-				544A075B2DDD615C0052AD62 /* TutorialDetailCoordinator.swift in Sources */,
 				544A07612DDD61D10052AD62 /* TutorialDetailView.swift in Sources */,
 				544A07302DDD5C730052AD62 /* HabitListView.swift in Sources */,
 			);
@@ -505,18 +468,15 @@
 				544A07632DDD61D10052AD62 /* TutorialDetailView.swift in Sources */,
 				544A07242DDD5B720052AD62 /* AppCoordinator.swift in Sources */,
 				544A07522DDD61070052AD62 /* TutorialCatalogViewModel.swift in Sources */,
-				544A07592DDD615C0052AD62 /* TutorialDetailCoordinator.swift in Sources */,
 				544A07672DDD62F20052AD62 /* Habit.swift in Sources */,
-				544A074E2DDD60E20052AD62 /* TutorialsCoordinator.swift in Sources */,
 				544A076B2DDD631B0052AD62 /* Tutorial.swift in Sources */,
-				544A07342DDD5ECE0052AD62 /* AppDelegate.swift in Sources */,
+				5449AD412DDEEC2800B2AA9C /* Route.swift in Sources */,
 				544A076E2DDD63470052AD62 /* HabitService.swift in Sources */,
 				544A07142DDD5A940052AD62 /* Coordinator.swift in Sources */,
 				544A075D2DDD61990052AD62 /* TutorialDetailViewModel.swift in Sources */,
 				544A07562DDD61290052AD62 /* TutorialCatalogView.swift in Sources */,
 				544A072D2DDD5C600052AD62 /* HabitListViewModel.swift in Sources */,
 				544A07322DDD5C730052AD62 /* HabitListView.swift in Sources */,
-				544A072A2DDD5C480052AD62 /* HabitListCoordinator.swift in Sources */,
 				544A07712DDD63780052AD62 /* TutorialService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

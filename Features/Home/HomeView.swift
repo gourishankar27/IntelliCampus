@@ -9,20 +9,40 @@ import Foundation
 import SwiftUI
 
 
-/// The main dashboard screen listing available IntelliCampus modules.
+
 struct HomeView: View {
-    
-    /// The view model driving the list of modules and handling user selection.
-    @ObservedObject var viewModel: HomeViewModel
+    @StateObject private var viewModel = HomeViewModel()
+    @EnvironmentObject private var coordinator: AppCoordinator
 
     var body: some View {
-        // Display each module in a list; tapping a row notifies via viewModel.select(_:)
-        List(viewModel.modules) { module in
-            Text(module.rawValue)
-                .onTapGesture {
-                    viewModel.select(module)
-                }
+        List(viewModel.modules, id: \.id) { module in
+            Button(module.rawValue) {
+                navigate(to: module)
+            }
+            .buttonStyle(.plain) // so it looks like plain text + tap
         }
-        .navigationTitle("IntelliCampus") // Sets the navigation bar title
+        .navigationTitle("IntelliCampus")  // parentheses, not braces
+    }
+
+    private func navigate(to module: Module) {
+        switch module {
+        case .habit:
+                coordinator.path.append(Route.habitList)
+            case .tutorials:
+                coordinator.path.append(Route.tutorialCatalog)
+            case .notesCollab:
+                coordinator.path.append(Route.notesCollab)
+            case .arCampus:
+                coordinator.path.append(Route.arCampus)
+            case .photoClassifier:
+                coordinator.path.append(Route.photoClassifier)
+            case .socialFeed:
+                coordinator.path.append(Route.socialFeed)
+        }
+
     }
 }
+
+
+
+

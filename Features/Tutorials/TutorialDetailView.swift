@@ -22,6 +22,7 @@ struct TutorialDetailView: View {
                     .padding()
             }
         }
+        .navigationTitle(viewModel.tutorial.title)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 if viewModel.isUnlocked || !viewModel.tutorial.isPremium {
@@ -36,6 +37,5 @@ struct TutorialDetailView: View {
                 }
             }
         }
-        .navigationTitle(viewModel.tutorial.title)
     }
 }
