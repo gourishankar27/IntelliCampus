@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import FirebaseFirestore
 /// Represents a user habit
 
 
@@ -31,13 +31,13 @@ import Foundation
 //SwiftUI compares each habit.id to animate insertions, moves, and deletions for us.
 
 
-struct Habit: Identifiable {
-    
-    /// Unique identifier for this habit instance.
-    /// Should be generated (e.g. `UUID()`) when we create a new Habit.
-    let id: UUID
-    
-    /// The display title of the habit (e.g. "Drink Water", "Read 30 min").
-    /// Immutable --> if we need to edit the title, create a new Habit or handle via ViewModel.
-    let title: String
+
+/// A single habit entry for offline-first Firestore.
+/// We store creation date and optional completion history.
+struct Habit: Identifiable, Codable {
+    @DocumentID var id: String?         // Firestore document ID
+    var title: String                  // e.g. "Meditate"
+    var createdAt: Date                // when it was added
+    var completedDates: [Date] = []    // days marked complete
 }
+

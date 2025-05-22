@@ -8,7 +8,6 @@
 import Foundation
 
 import Combine
-import StoreKit
 
 /// Protocol for tutorial listing, purchasing, and content
 protocol TutorialServiceProtocol {
@@ -28,7 +27,7 @@ class TutorialService: TutorialServiceProtocol {
     /// Tracks which tutorial IDs the user has unlocked (purchased).
     ///
     /// — **Note:** This is ephemeral memory; app restart resets all unlocks.
-    private var unlocked: Set<UUID> = []
+    private var unlocked: Set<String> = []
 
     
     /// Initiates a StoreKit request to fetch product info (localized price, titles).
@@ -47,19 +46,31 @@ class TutorialService: TutorialServiceProtocol {
     func getAllTutorials() -> [Tutorial] {
         // TODO: replace with real data/fetched products
         return [
-            Tutorial(id: UUID(), title: "Intro to SwiftUI", description: "Learn the basics.", isPremium: false, price: nil),
-            Tutorial(id: UUID(), title: "Advanced Combine", description: "Deep dive.", isPremium: true, price: "$4.99")
+            Tutorial(
+                id: UUID().uuidString,
+                title: "Intro to SwiftUI",
+                description: "Learn the basics.",
+                isPremium: false,
+                price: nil,
+                markdownContent: "# Intro to SwiftUI\nLearn the basics."),
+            Tutorial(
+                id: UUID().uuidString,
+                title: "Advanced Combine",
+                description: "Deep dive.",
+                isPremium: true,
+                price: 4.99,
+                markdownContent: nil)
         ]
     }
 
     
-    /// Checks if the given tutorial has been unlocked (purchased) by the user.
-    ///
-    /// - Parameter tutorial: The tutorial to check.
-    /// - Returns: `true` if its `id` is in the `unlocked` set.
+    
     func isTutorialUnlocked(_ tutorial: Tutorial) -> Bool {
-        unlocked.contains(tutorial.id)
-    }
+            // 1) Unwrap the optional String ID
+            guard let id = tutorial.id else { return false }
+            // 2) Check against the Set<String>
+            return unlocked.contains(id)
+        }
 
 
     /// Retrieves the content for a tutorial, gating access for locked premium items.
@@ -78,26 +89,19 @@ class TutorialService: TutorialServiceProtocol {
 
     
     
-    /// Initiates an in‐app purchase flow for the specified tutorial.
-    ///
-    /// - Parameter tutorial: The premium tutorial to purchase.
-    /// - Returns: A Combine publisher emitting `true` on success, or an `Error`.
-    ///
-    /// — **Stub Implementation:**
-    ///   Emits `true` after a 1-second delay, then records the unlock.
-    ///   Replace with real `SKPaymentQueue` handling and error mapping.
     func purchaseTutorial(_ tutorial: Tutorial) -> AnyPublisher<Bool, Error> {
-        // TODO: integrate StoreKit purchase flow
-        Just(true)
-            .delay(for: .seconds(1), scheduler: RunLoop.main)
-            .map { [weak self] success in
-                if success { self?.unlocked.insert(tutorial.id) }
-                return success
-            }
-            .setFailureType(to: Error.self)
-            .eraseToAnyPublisher()
-    }
-
+            Just(true)
+                .delay(for: .seconds(1), scheduler: RunLoop.main)
+                .map { [weak self] success in
+                    if success, let id = tutorial.id {
+                        // 3) Insert the String ID into the set
+                        self?.unlocked.insert(id)
+                    }
+                    return success
+                }
+                .setFailureType(to: Error.self)
+                .eraseToAnyPublisher()
+        }
     
     
     /// Marks a tutorial as completed (e.g. for progress tracking).

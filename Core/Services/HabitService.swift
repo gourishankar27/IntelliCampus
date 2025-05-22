@@ -74,7 +74,11 @@ class HabitService: HabitServiceProtocol {
     /// In a real service you might `throw` on invalid input
     /// or propagate I/O errors from disk/network.
     func addHabit(title: String) {
-        let habit = Habit(id: UUID(), title: title)
+        let habit = Habit(id: UUID().uuidString,
+                          title: title,
+                          createdAt: Date(),
+                          completedDates: [] 
+        )
         storage.append(habit)
     }
 }

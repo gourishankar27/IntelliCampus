@@ -13,6 +13,11 @@ import Foundation
 
 /// Defines all navigation destinations in the app.
 enum Route: Hashable {
+    
+    case login
+    
+    case signup
+    
     /// The home (module selection) screen
     case home
     
@@ -23,7 +28,7 @@ enum Route: Hashable {
     case tutorialCatalog
     
     /// Tutorial detail screen, carrying the tutorial’s unique ID
-    case tutorialDetail(id: UUID)
+    case tutorialDetail(tutorial: Tutorial)
     
     /// Real-time collaborative notes flow
     case notesCollab

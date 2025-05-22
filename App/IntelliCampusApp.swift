@@ -6,48 +6,27 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
-//@main
-//struct IntelliCampusApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//        }
-//    }
-//}
-
-
-//@main
-//struct IntelliCampusApp: App {
-//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-//
-//    var body: some Scene {
-//        WindowGroup {
-//            EmptyView() // UIKit handles root via AppDelegate & AppCoordinator
-//        }
-//    }
-//}
 
 @main
 struct IntelliCampusApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
+
     @StateObject private var coordinator = AppCoordinator()
 
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $coordinator.path) {
-                // The very first view is HomeView()
                 HomeView()
                     .environmentObject(coordinator)
-                
-                    // 2) Register every Route → View mapping:
-                    .navigationDestination(for: Route.self) { route in
-                        
-                        // This closure is called whenever you do:
-                        //   coordinator.path.append(someRoute)
-                        coordinator.destinationView(for: route)
-                    }
             }
-            .onAppear { coordinator.start() }
+            .navigationDestination(for: Route.self) { route in
+                coordinator.destinationView(for: route)
+            }
+            
         }
     }
 }

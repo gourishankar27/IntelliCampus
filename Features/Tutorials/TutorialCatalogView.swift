@@ -37,30 +37,27 @@ struct TutorialCatalogView: View {
 //    }
     
     var body: some View {
-            List(viewModel.tutorials, id: \.id) { tutorial in
-                Button(action: {
-                                // fully‐qualified enum case
-                                coordinator.path.append(
-                                    Route.tutorialDetail(id: tutorial.id)
-                                )
-                            }) {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(tutorial.title).font(.headline)
-                            Text(tutorial.description).font(.subheadline)
-                        }
-                        Spacer()
-                        if tutorial.isPremium {
-                            Text(tutorial.price ?? "")
-                                .badge("💎")
-                        } else {
-                            Text("Free").badge("✅")
-                        }
+        List(viewModel.tutorials, id: \.id) { tutorial in
+            Button {
+                coordinator.path.append(Route.tutorialDetail(tutorial: tutorial))
+            } label: {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text(tutorial.title).font(.headline)
+                        Text(tutorial.description).font(.subheadline)
                     }
-                    .contentShape(Rectangle())
+                    Spacer()
+                    if tutorial.isPremium {
+                        Text(tutorial.price ?? 0, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                            .badge("💎")
+                    } else {
+                        Text("Free").badge("✅")
+                    }
                 }
-                .buttonStyle(.plain)   // keep the row style
+                .contentShape(Rectangle())
             }
-            .navigationTitle("Tutorials")
+            .buttonStyle(.plain)
+        }
+        .navigationTitle("Tutorials")
         }
 }
