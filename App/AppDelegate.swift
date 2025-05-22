@@ -16,14 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
-        // Create window & nav controller
+        // Create the main window and a UINavigationController
         let window = UIWindow(frame: UIScreen.main.bounds)
         let nav = UINavigationController()
 
         // Bootstrap AppCoordinator
         coordinator = AppCoordinator(window: window, navigationController: nav)
+        
+        /// Attach nav controller as root and show it
         window.rootViewController = nav
         window.makeKeyAndVisible()
+
+        /// Kick off our first flow
         coordinator?.start()
 
         self.window = window

@@ -19,7 +19,7 @@ class AppCoordinator: Coordinator {
     }
 
     func start() {
-        // Start with Home module
+        // Start our very first module — Start with Home module
         let homeCoordinator = HomeCoordinator(navigationController: navigationController)
         homeCoordinator.start()
     }

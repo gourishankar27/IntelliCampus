@@ -9,7 +9,10 @@ import UIKit
 
 /// Defines a navigation unit that can “start” itself.
 protocol Coordinator {
-  var navigationController: UINavigationController { get set }
-  func start()
+    /// The navigation controller this flow will push onto.
+    var navigationController: UINavigationController { get set }
+  
+    /// Kick off the flow—e.g. push the initial view controller.
+    func start()
 }
 
