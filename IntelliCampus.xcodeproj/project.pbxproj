@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5413F49B2DDFCDCB00BBB110 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5413F49A2DDFCDCB00BBB110 /* FirebaseAnalytics */; };
+		5413F4A12DDFD09200BBB110 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5413F4A02DDFD09200BBB110 /* GoogleService-Info.plist */; };
+		5413F4A22DDFD09200BBB110 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5413F4A02DDFD09200BBB110 /* GoogleService-Info.plist */; };
+		5413F4A32DDFD09200BBB110 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5413F4A02DDFD09200BBB110 /* GoogleService-Info.plist */; };
 		5449AD402DDEEC2800B2AA9C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449AD3F2DDEEC2800B2AA9C /* Route.swift */; };
 		5449AD412DDEEC2800B2AA9C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449AD3F2DDEEC2800B2AA9C /* Route.swift */; };
 		5449AD422DDEEC2800B2AA9C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5449AD3F2DDEEC2800B2AA9C /* Route.swift */; };
@@ -97,6 +101,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5413F4A02DDFD09200BBB110 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5449AD3F2DDEEC2800B2AA9C /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		5449AD482DDF020F00B2AA9C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5449AD4C2DDF022100B2AA9C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -122,6 +127,16 @@
 		544A07702DDD63780052AD62 /* TutorialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5413F4A52DDFF4A800BBB110 /* Exceptions for "IntelliCampus" folder in "IntelliCampus" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 544A06E12DDD5A360052AD62 /* IntelliCampus */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5449AD472DDF01CC00B2AA9C /* Auth */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -130,6 +145,9 @@
 		};
 		544A06E42DDD5A360052AD62 /* IntelliCampus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5413F4A52DDFF4A800BBB110 /* Exceptions for "IntelliCampus" folder in "IntelliCampus" target */,
+			);
 			path = IntelliCampus;
 			sourceTree = "<group>";
 		};
@@ -161,6 +179,7 @@
 				5449AD6E2DDF082200B2AA9C /* FirebaseCore in Frameworks */,
 				5449AD702DDF082200B2AA9C /* FirebaseDatabase in Frameworks */,
 				5449AD922DDF0D6C00B2AA9C /* GoogleSignInSwift in Frameworks */,
+				5413F49B2DDFCDCB00BBB110 /* FirebaseAnalytics in Frameworks */,
 				5449AD742DDF082200B2AA9C /* FirebaseFirestoreCombine-Community in Frameworks */,
 				5449AD722DDF082200B2AA9C /* FirebaseFirestore in Frameworks */,
 				5449AD6C2DDF082200B2AA9C /* FirebaseAuth in Frameworks */,
@@ -335,6 +354,7 @@
 		544A07222DDD5ABD0052AD62 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5413F4A02DDFD09200BBB110 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -371,6 +391,7 @@
 				5449AD772DDF082200B2AA9C /* FirebaseVertexAI */,
 				5449AD8F2DDF0D6C00B2AA9C /* GoogleSignIn */,
 				5449AD912DDF0D6C00B2AA9C /* GoogleSignInSwift */,
+				5413F49A2DDFCDCB00BBB110 /* FirebaseAnalytics */,
 			);
 			productName = IntelliCampus;
 			productReference = 544A06E22DDD5A360052AD62 /* IntelliCampus.app */;
@@ -479,6 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5413F4A12DDFD09200BBB110 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5413F4A22DDFD09200BBB110 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5413F4A32DDFD09200BBB110 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,10 +744,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G873JNL7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IntelliCampus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IntelliCampus;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -736,6 +765,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.gourishankar.IntelliCampus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -747,10 +777,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G873JNL7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IntelliCampus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IntelliCampus;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -763,6 +798,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.gourishankar.IntelliCampus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -898,6 +934,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5413F49A2DDFCDCB00BBB110 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5449AD682DDF082200B2AA9C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
 		5449AD692DDF082200B2AA9C /* FirebaseAI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5449AD682DDF082200B2AA9C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

@@ -18,36 +18,6 @@
             endingLineNumber = "36"
             landmarkName = "requestProducts()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B39DFE1F-C227-4388-AC05-10AB76FDED3D - 11a44c3b415bb255"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IntelliCampus.TutorialService.requestProducts() -&gt; ()"
-                  moduleName = "IntelliCampus.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/irobot/Documents/iOS%20Development/IntelliCampus/Core/Services/TutorialService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37">
-               </Location>
-               <Location
-                  uuid = "B39DFE1F-C227-4388-AC05-10AB76FDED3D - 11a44c3b415bbdb4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IntelliCampus.TutorialService.requestProducts() -&gt; ()"
-                  moduleName = "IntelliCampus.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/irobot/Documents/iOS%20Development/IntelliCampus/Core/Services/TutorialService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
